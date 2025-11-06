@@ -1,1 +1,1 @@
-web: superset run -p 8080 --with-threads --reload --debugger
+web: superset run -p $PORT --with-threads --reload --debugger
