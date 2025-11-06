@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.env
+venv/
+.env
+
+# Docker
+*.log
+*.db
+superset_home/
+docker-compose.override.yml
+
+# IDEs
+.vscode/
+.idea/
+
+# Misc
+*.zip
