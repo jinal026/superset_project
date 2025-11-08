@@ -3,6 +3,6 @@ builder = "dockerfile"
 dockerfilePath = "Dockerfile"
 
 [deploy]
-startCommand = "superset run -h 0.0.0.0 -p ${PORT} --with-threads --reload"
+startCommand = "/app/start.sh"
 restartPolicyType = "on_failure"
 restartPolicyMaxRetries = 10

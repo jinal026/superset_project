@@ -5,6 +5,11 @@ USER root
 # Install PostgreSQL driver
 RUN pip install psycopg2-binary
 
+# Copy startup script
+COPY start.sh /app/start.sh
+RUN chmod +x /app/start.sh
+
+
 USER superset
 
 # Set secret key (change this to a random string)
@@ -21,9 +26,6 @@ RUN superset fab create-admin \
     --email jinal.swarnakar@fiftyfivetech.io \
     --password 123
 
-# Load examples (optional, remove if you don't want sample dashboards)
-# RUN superset load_examples
-
 # Initialize Superset
 RUN superset init
 
@@ -31,4 +33,4 @@ RUN superset init
 EXPOSE 8080
 
 # Start Superset
-CMD superset run -h 0.0.0.0 -p ${PORT:-8080} --with-threads --reload
+CMD ["/app/start.sh"]
