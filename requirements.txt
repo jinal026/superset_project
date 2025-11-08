@@ -1,0 +1,4 @@
+apache-superset==4.0.2
+gunicorn
+python-dotenv
+psycopg2-binary
