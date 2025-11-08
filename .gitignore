@@ -12,6 +12,7 @@ venv/
 *.db
 superset_home/
 docker-compose.override.yml
+Dockerfile 
 
 # IDEs
 .vscode/
