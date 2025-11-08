@@ -1,13 +1,13 @@
 [phases.setup]
-nixPkgs = ["python311", "postgresql", "gcc"]
+nixPkgs = ["python310", "postgresql_14", "gcc", "pkg-config"]
 
 [phases.install]
 cmds = [
-  "python3.11 -m venv /opt/venv",
+  "python3.10 -m venv /opt/venv",
   ". /opt/venv/bin/activate",
   "pip install --upgrade pip setuptools wheel",
-  "pip install -r requirements.txt"
+  "pip install apache-superset psycopg2-binary"
 ]
 
-[phases.start]
+[start]
 cmd = "bash start.sh"

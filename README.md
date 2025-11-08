@@ -1,10 +1,11 @@
-# Superset on Railway
+# Apache Superset on Railway
 
-Apache Superset deployment for Railway.
+This repo deploys Apache Superset fully on Railway without Docker.
 
-## Credentials
-- Username: jinal
-- Password: 123
+### Steps to deploy
+1. Add a PostgreSQL service in your Railway project.
+2. Copy the `postgresql` connection URL (from your DB service).
+3. Deploy this repo.
+4. Once running, open Superset → Settings → Database Connections.
+5. Add your internal Railway Postgres connection string, e.g.:
 
-## Database
-Connected to Supabase PostgreSQL
