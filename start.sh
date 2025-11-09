@@ -55,4 +55,8 @@ echo "✅ Starting Superset on port 8088"
 echo "=========================================="
 
 # Start Superset server
-exec superset run -h 0.0.0.0 -p 8088 --with-threads --reload
+exec gunicorn superset.app:create_app \
+    --bind 0.0.0.0:$PORT \
+    --workers 3 \
+    --threads 3 \
+    --timeout 120
