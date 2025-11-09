@@ -16,10 +16,12 @@ RUN apt-get update && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
+COPY requirements.txt /app/
+
 # Ensure pip exists in Superset's virtualenv and install psycopg2
 RUN /app/.venv/bin/python -m ensurepip && \
     /app/.venv/bin/python -m pip install --no-cache-dir --upgrade pip setuptools wheel && \
-    /app/.venv/bin/python -m pip install --no-cache-dir psycopg2-binary
+    /app/.venv/bin/python -m pip install --no-cache-dir -r /app/requirements.txt
 
 # Verify psycopg2 installation
 RUN /app/.venv/bin/python -c "import psycopg2; print('✅ psycopg2 version:', psycopg2.__version__)"
