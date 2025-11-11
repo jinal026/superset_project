@@ -30,9 +30,10 @@ SQLLAB_CTAS_NO_LIMIT = True
 # Enable feature flags
 FEATURE_FLAGS = {
     "DASHBOARD_NATIVE_FILTERS": True,
-    "ENABLE_TEMPLATE_PROCESSING": True,
+    "DASHBOARD_CROSS_FILTERS": True,
+    "DASHBOARD_NATIVE_FILTERS_SET": True,
+    "DASHBOARD_NATIVE_FILTERS_HORIZONTAL": True,  # 👈 enables horizontal filters
 }
-
 # Configure metadata database connection pool
 SQLALCHEMY_ENGINE_OPTIONS = {
     "pool_pre_ping": True,
