@@ -1,4 +1,5 @@
 import os
+import datetime
 
 # Database configuration
 SQLALCHEMY_DATABASE_URI = os.environ.get(
@@ -62,7 +63,27 @@ SQLALCHEMY_ENGINE_OPTIONS = {
     "pool_recycle": 3600,
 }
 
-# Time grain configurations for time range filters
+# ── Date boundary helpers ────────────────────────────────────────────────────
+# Earliest date we have data for
+DATA_MIN_DATE = "2024-01-01"
+
+def _min_allowed_date() -> str:
+    return DATA_MIN_DATE
+
+def _max_allowed_date() -> str:
+    # Yesterday — we never have today's data
+    return (datetime.date.today() - datetime.timedelta(days=1)).strftime("%Y-%m-%d")
+
+# Expose to Jinja2 templates in datasets/charts so SQL can enforce the boundary:
+#   WHERE date_col BETWEEN '{{ min_date() }}' AND '{{ max_date() }}'
+JINJA_CONTEXT_ADDONS = {
+    "min_date": _min_allowed_date,
+    "max_date": _max_allowed_date,
+}
+
+OVERRIDE_HTTP_HEADERS = {"X-Frame-Options": "SAMEORIGIN"}
+
+# ── Time grain configurations for time range filters ─────────────────────────
 TIME_GRAIN_ADDONS = {
     'PT1S': '1 second',
     'PT1M': '1 minute',
