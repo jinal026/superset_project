@@ -26,6 +26,14 @@ RUN /app/.venv/bin/python -m ensurepip && \
 # Verify psycopg2 installation
 RUN /app/.venv/bin/python -c "import psycopg2; print('✅ psycopg2 version:', psycopg2.__version__)"
 
+# Copy Swedish translation files into Superset's translations directory
+COPY translations/sv/LC_MESSAGES/messages.po translations/sv/LC_MESSAGES/messages.mo /tmp/sv_locale/
+RUN SUPERSET_TRANS=$(/app/.venv/bin/python -c "import superset, os; print(os.path.join(os.path.dirname(superset.__file__), 'translations'))") && \
+    mkdir -p $SUPERSET_TRANS/sv/LC_MESSAGES && \
+    cp /tmp/sv_locale/messages.po $SUPERSET_TRANS/sv/LC_MESSAGES/messages.po && \
+    cp /tmp/sv_locale/messages.mo $SUPERSET_TRANS/sv/LC_MESSAGES/messages.mo && \
+    echo "Swedish translations installed at $SUPERSET_TRANS/sv/LC_MESSAGES/"
+
 # Copy Superset config and start script
 COPY superset_config.py /app/superset_config.py
 COPY start.sh /app/start.sh
