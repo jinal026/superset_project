@@ -1,11 +1,29 @@
 import os
+from flask import Blueprint, redirect, session
 
 # Language / i18n
-BABEL_DEFAULT_LOCALE = "en"
+BABEL_DEFAULT_LOCALE = "sv"
 LANGUAGES = {
-    "en": {"flag": "us", "name": "English"},
-    "sv": {"flag": "se", "name": "Swedish"},
+    "sv": {"flag": "se", "name": "Svenska", "url": "/switch-lang/sv"},
+    "en": {"flag": "us", "name": "English", "url": "/switch-lang/en"},
 }
+
+# Custom blueprint — language toggle redirects to the correct dashboard
+_lang_bp = Blueprint("lang_redirect", __name__)
+
+_LANG_DASHBOARD = {
+    "sv": "/superset/dashboard/brodsalt-sv/",
+    "en": "/superset/dashboard/brodsalt-en/",
+}
+
+@_lang_bp.route("/switch-lang/<string:lang>")
+def switch_language(lang):
+    if lang in _LANG_DASHBOARD:
+        session["locale"] = lang
+        return redirect(_LANG_DASHBOARD[lang])
+    return redirect("/")
+
+BLUEPRINTS = [_lang_bp]
 
 # Database configuration
 SQLALCHEMY_DATABASE_URI = os.environ.get(
