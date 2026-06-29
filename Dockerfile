@@ -28,10 +28,8 @@ RUN /app/.venv/bin/python -c "import psycopg2; print('✅ psycopg2 version:', ps
 
 # Copy Swedish translation files into Superset's translations directory
 COPY translations/sv/LC_MESSAGES/messages.po translations/sv/LC_MESSAGES/messages.mo /tmp/sv_locale/
-RUN SUPERSET_TRANS=$(find /app -type d -name "translations" -path "*/superset/translations" 2>/dev/null | head -1) && \
-    if [ -z "$SUPERSET_TRANS" ]; then \
-        SUPERSET_TRANS=$(find /usr -type d -name "translations" -path "*/superset/translations" 2>/dev/null | head -1); \
-    fi && \
+RUN SUPERSET_TRANS=$(/app/.venv/bin/python -c "import superset, os; print(os.path.join(os.path.dirname(superset.__file__), 'translations'))") && \
+    if [ -z "$SUPERSET_TRANS" ]; then echo "ERROR: Could not locate Superset translations dir" && exit 1; fi && \
     mkdir -p "$SUPERSET_TRANS/sv/LC_MESSAGES" && \
     cp /tmp/sv_locale/messages.po "$SUPERSET_TRANS/sv/LC_MESSAGES/messages.po" && \
     cp /tmp/sv_locale/messages.mo "$SUPERSET_TRANS/sv/LC_MESSAGES/messages.mo" && \
