@@ -1,5 +1,12 @@
 import os
 
+# Language / i18n
+BABEL_DEFAULT_LOCALE = "en"
+LANGUAGES = {
+    "en": {"flag": "us", "name": "English"},
+    "sv": {"flag": "se", "name": "Swedish"},
+}
+
 # Database configuration
 SQLALCHEMY_DATABASE_URI = os.environ.get(
     "DATABASE_URL",
