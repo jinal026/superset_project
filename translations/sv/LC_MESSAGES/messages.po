@@ -2308,22 +2308,22 @@ msgid "Centroid (Longitude and Latitude): "
 msgstr "Centroid (Longitud and Latitud): "
 
 msgid "Certification"
-msgstr "Certification"
+msgstr "Certifiering"
 
 msgid "Certification and additional settings"
 msgstr "Certification and additional settings"
 
 msgid "Certification details"
-msgstr "Certification details"
+msgstr "Certifieringsdetaljer"
 
 msgid "Certified"
-msgstr "Certified"
+msgstr "Certifierad"
 
 msgid "Certified By"
 msgstr "Certified Av"
 
 msgid "Certified by"
-msgstr "Certified by"
+msgstr "Certifierad av"
 
 #, python-format
 msgid "Certified by %s"
@@ -3332,7 +3332,7 @@ msgid "Cross-filtering scoping"
 msgstr "Cross-filtering scoping"
 
 msgid "Cross-filters"
-msgstr "Cross-filters"
+msgstr "Korsfilter"
 
 msgid "Cumulative"
 msgstr "Kumulativ"
@@ -3356,19 +3356,19 @@ msgid "Current"
 msgstr "Aktuell"
 
 msgid "Current day"
-msgstr "Current day"
+msgstr "Aktuell dag"
 
 msgid "Current month"
-msgstr "Current month"
+msgstr "Aktuell månad"
 
 msgid "Current quarter"
-msgstr "Current quarter"
+msgstr "Aktuellt kvartal"
 
 msgid "Current week"
-msgstr "Current week"
+msgstr "Aktuell vecka"
 
 msgid "Current year"
-msgstr "Current year"
+msgstr "Aktuellt år"
 
 #, python-format
 msgid "Currently rendered: %s"
@@ -3494,19 +3494,19 @@ msgid "Daily seasonality"
 msgstr "Daily seasonality"
 
 msgid "Dark"
-msgstr "Dark"
+msgstr "Mörkt"
 
 msgid "Dark Cyan"
 msgstr "Dark Cyan"
 
 msgid "Dark mode"
-msgstr "Dark mode"
+msgstr "Mörkt läge"
 
 msgid "Dashboard"
-msgstr "Dashboard"
+msgstr "Instrumentpanel"
 
 msgid "Dashboard Filter"
-msgstr "Dashboard Filter"
+msgstr "Instrumentpanelfilter"
 
 msgid "Dashboard Id"
 msgstr "Dashboard Id"
@@ -3537,7 +3537,7 @@ msgid "Dashboard could not be updated."
 msgstr "Dashboard could not be updated."
 
 msgid "Dashboard does not exist"
-msgstr "Dashboard does not exist"
+msgstr "Instrumentpanel finns inte"
 
 msgid "Dashboard exported as example successfully"
 msgstr "Dashboard exported as example successfully"
@@ -3546,7 +3546,7 @@ msgid "Dashboard exported successfully"
 msgstr "Dashboard exported successfully"
 
 msgid "Dashboard imported"
-msgstr "Dashboard imported"
+msgstr "Instrumentpanel importerad"
 
 msgid "Dashboard name and URL configuration"
 msgstr "Dashboardnamn and URL configuration"
@@ -3561,13 +3561,13 @@ msgid "Dashboard parameters are invalid."
 msgstr "Dashboard parameters are invalid."
 
 msgid "Dashboard properties"
-msgstr "Dashboard properties"
+msgstr "Instrumentpanelegenskaper"
 
 msgid "Dashboard properties updated"
-msgstr "Dashboard properties updated"
+msgstr "Instrumentpanelegenskaper uppdaterade"
 
 msgid "Dashboard scheme"
-msgstr "Dashboard scheme"
+msgstr "Instrumentpanelschema"
 
 msgid ""
 "Dashboard time range filters apply to temporal columns defined in\n"
@@ -3582,16 +3582,16 @@ msgid "Dashboard title"
 msgstr "Dashboardtitel"
 
 msgid "Dashboard usage"
-msgstr "Dashboard usage"
+msgstr "Instrumentpanelsanvändning"
 
 msgid "Dashboards"
-msgstr "Dashboards"
+msgstr "Instrumentpaneler"
 
 msgid "Dashboards could not be created."
 msgstr "Dashboards could not be created."
 
 msgid "Dashboards do not exist"
-msgstr "Dashboards do not exist"
+msgstr "Instrumentpaneler finns inte"
 
 msgid "Dashed"
 msgstr "Dashed"
@@ -3622,13 +3622,13 @@ msgid "Data for %s"
 msgstr "Data for %s"
 
 msgid "Data imported"
-msgstr "Data imported"
+msgstr "Data importerad"
 
 msgid "Data preview"
-msgstr "Data preview"
+msgstr "Förhandsgranskning av data"
 
 msgid "Data refreshed"
-msgstr "Data refreshed"
+msgstr "Data uppdaterad"
 
 msgid "Data type"
 msgstr "Datatyp"
@@ -3715,7 +3715,7 @@ msgid "Databases"
 msgstr "Databaser"
 
 msgid "Dataset"
-msgstr "Dataset"
+msgstr "Datamängd"
 
 #, python-format
 msgid "Dataset %(table)s already exists"
@@ -3743,7 +3743,7 @@ msgid "Dataset does not exist"
 msgstr "Dataset does not exist"
 
 msgid "Dataset imported"
-msgstr "Dataset imported"
+msgstr "Datamängd importerad"
 
 msgid "Dataset is required"
 msgstr "Datamängd krävs"
@@ -3777,7 +3777,7 @@ msgid "Datasets do not contain a temporal column"
 msgstr "Datamängder do not contain a temporal column"
 
 msgid "Datasource"
-msgstr "Datasource"
+msgstr "Datakälla"
 
 msgid "Datasource & Chart Type"
 msgstr "Datasource & Diagram Typ"
@@ -3826,7 +3826,7 @@ msgid "Db engine did not return all queried columns"
 msgstr "Db engine did not return all queried columns"
 
 msgid "Deactivate"
-msgstr "Deactivate"
+msgstr "Inaktivera"
 
 msgid "December"
 msgstr "December"
@@ -4196,7 +4196,7 @@ msgid "Description text that shows up below your Big Number"
 msgstr "Beskrivning text that shows up below your Stort tal"
 
 msgid "Deselect all"
-msgstr "Deselect all"
+msgstr "Avmarkera alla"
 
 msgid "Design with"
 msgstr "Design with"
@@ -4436,7 +4436,7 @@ msgid "Draw split lines for minor y-axis ticks"
 msgstr "Draw split lines for minor y-axis ticks"
 
 msgid "Drill by"
-msgstr "Drill by"
+msgstr "Bryt ned efter"
 
 msgid "Drill by is not available for this data point"
 msgstr "Drill by is not available for this data point"
@@ -4449,10 +4449,10 @@ msgid "Drill by: %s"
 msgstr "Drill by: %s"
 
 msgid "Drill to detail"
-msgstr "Drill to detail"
+msgstr "Gå till detaljer"
 
 msgid "Drill to detail by"
-msgstr "Drill to detail by"
+msgstr "Gå till detaljer efter"
 
 msgid "Drill to detail by value is not yet supported for this chart type."
 msgstr "Drill to detail by value is not yet supported for this chart type."
@@ -4891,7 +4891,7 @@ msgid "Enter duration in seconds"
 msgstr "Enter duration in seconds"
 
 msgid "Enter fullscreen"
-msgstr "Enter fullscreen"
+msgstr "Öppna helskärm"
 
 msgid "Enter minimum and maximum values for the range filter"
 msgstr "Enter minimum and maximum values for the range filter"
@@ -5120,7 +5120,7 @@ msgid "Existing dataset"
 msgstr "Existing dataset"
 
 msgid "Exit fullscreen"
-msgstr "Exit fullscreen"
+msgstr "Avsluta helskärm"
 
 msgid "Expand"
 msgstr "Expandera"
@@ -5388,7 +5388,7 @@ msgid "Favorite"
 msgstr "Favorit"
 
 msgid "Featured"
-msgstr "Featured"
+msgstr "Utvalda"
 
 msgid "Featured color palettes"
 msgstr "Featured color palettes"
@@ -5457,13 +5457,13 @@ msgid "Filter Type"
 msgstr "Filter Typ"
 
 msgid "Filter charts"
-msgstr "Filter charts"
+msgstr "Filtrera diagram"
 
 msgid "Filter has default value"
-msgstr "Filter has default value"
+msgstr "Filter har standardvärde"
 
 msgid "Filter menu"
-msgstr "Filter menu"
+msgstr "Filtermeny"
 
 msgid "Filter name"
 msgstr "Filternamn"
@@ -5472,10 +5472,10 @@ msgid "Filter only displays values relevant to selections made in other filters.
 msgstr "Filter only displays values relevant to selections made in other filters."
 
 msgid "Filter results"
-msgstr "Filter results"
+msgstr "Filterresultat"
 
 msgid "Filter type"
-msgstr "Filter type"
+msgstr "Filtertyp"
 
 msgid "Filter value (case sensitive)"
 msgstr "Filtervärde (case sensitive)"
@@ -5487,7 +5487,7 @@ msgid "Filter value list cannot be empty"
 msgstr "Filtervärde list cannot be empty"
 
 msgid "Filter your charts"
-msgstr "Filter your charts"
+msgstr "Filtrera dina diagram"
 
 msgid "Filters"
 msgstr "Filter"
@@ -5566,7 +5566,7 @@ msgid "Folder with content must have a name"
 msgstr "Folder with content must have a name"
 
 msgid "Folders"
-msgstr "Folders"
+msgstr "Mappar"
 
 msgid "Font size"
 msgstr "Teckensnitt size"
@@ -6509,7 +6509,7 @@ msgid "Labels for the ranges"
 msgstr "Etiketts for the ranges"
 
 msgid "Languages"
-msgstr "Languages"
+msgstr "Språk"
 
 msgid "Large"
 msgstr "Stor"
@@ -6599,7 +6599,7 @@ msgid "Layout"
 msgstr "Layout"
 
 msgid "Layout elements"
-msgstr "Layout elements"
+msgstr "Layoutelement"
 
 msgid "Layout type of graph"
 msgstr "Layout type of graph"
@@ -6954,7 +6954,7 @@ msgid "Markup type"
 msgstr "Markup type"
 
 msgid "Match system"
-msgstr "Match system"
+msgstr "Systemstandard"
 
 msgid "Match time shift color with original series"
 msgstr "Match time shift color with original series"
@@ -7179,7 +7179,7 @@ msgid "Min/max (no outliers)"
 msgstr "Min/max (no outliers)"
 
 msgid "Mine"
-msgstr "Mine"
+msgstr "Mina"
 
 msgid "Minimum"
 msgstr "Minimum"
@@ -8199,7 +8199,7 @@ msgid "Person or group that has certified this metric"
 msgstr "Person or group that has certified this metric"
 
 msgid "Personal info"
-msgstr "Personal info"
+msgstr "Personlig information"
 
 msgid "Physical"
 msgstr "Fysisk"
@@ -8628,7 +8628,7 @@ msgid "Query was stopped."
 msgstr "Fråga was stopped."
 
 msgid "Queued"
-msgstr "Queued"
+msgstr "I kö"
 
 msgid "RGB Color"
 msgstr "RGB Färg"
@@ -8703,7 +8703,7 @@ msgid "Recently modified"
 msgstr "Nyligen ändrad"
 
 msgid "Recents"
-msgstr "Recents"
+msgstr "Senaste"
 
 msgid "Recipients are separated by \",\" or \";\""
 msgstr "Mottagare are separated by \",\" or \";\""
@@ -8773,16 +8773,16 @@ msgid "Refreshing columns"
 msgstr "Uppdateraing columns"
 
 msgid "Register"
-msgstr "Register"
+msgstr "Registrera"
 
 msgid "Registration date"
-msgstr "Registration date"
+msgstr "Registreringsdatum"
 
 msgid "Registration hash"
 msgstr "Registration hash"
 
 msgid "Registration successful"
-msgstr "Registration successful"
+msgstr "Registrering lyckades"
 
 msgid "Regular"
 msgstr "Regular"
@@ -9545,7 +9545,7 @@ msgid "See all %(tableName)s"
 msgstr "See all %(tableName)s"
 
 msgid "See less"
-msgstr "See less"
+msgstr "Visa mindre"
 
 msgid "See more"
 msgstr "Se mer"
@@ -9931,7 +9931,7 @@ msgid "Set as default light theme"
 msgstr "Ange som standard light theme"
 
 msgid "Set auto-refresh"
-msgstr "Set auto-refresh"
+msgstr "Ange autouppdatering"
 
 msgid "Set filter mapping"
 msgstr "Set filter mapping"
@@ -10853,7 +10853,7 @@ msgid "Target value"
 msgstr "Mål value"
 
 msgid "Template"
-msgstr "Template"
+msgstr "Mall"
 
 msgid "Template for cell titles. Use Handlebars templating syntax (a popular templating library that uses double curly brackets for variable substitution): {{row}}, {{column}}, {{rowLabel}}, {{columnLabel}}"
 msgstr "Template for cell titles. Use Handlebars templating syntax (a popular templating library that uses double curly brackets for variable substitution): {{row}}, {{column}}, {{rowEtikett}}, {{columnLabel}}"
@@ -12014,7 +12014,7 @@ msgid "Threshold: "
 msgstr "Tröskel: "
 
 msgid "Thumbnails"
-msgstr "Thumbnails"
+msgstr "Miniatyrbilder"
 
 msgid "Thursday"
 msgstr "Torsdag"
@@ -13313,7 +13313,7 @@ msgid "Word Rotation"
 msgstr "Word Rotation"
 
 msgid "Working"
-msgstr "Working"
+msgstr "Pågår"
 
 msgid "Working timeout"
 msgstr "Working timeout"
@@ -13892,7 +13892,7 @@ msgid "database"
 msgstr "Databas"
 
 msgid "dataset"
-msgstr "dataset"
+msgstr "datamängd"
 
 msgid "dataset name"
 msgstr "Datamängdsnamn"
@@ -14270,16 +14270,16 @@ msgid "pixels"
 msgstr "pixels"
 
 msgid "previous calendar month"
-msgstr "previous calendar month"
+msgstr "föregående kalendermånad"
 
 msgid "previous calendar quarter"
-msgstr "previous calendar quarter"
+msgstr "föregående kvartal"
 
 msgid "previous calendar week"
-msgstr "previous calendar week"
+msgstr "föregående kalendervecka"
 
 msgid "previous calendar year"
-msgstr "previous calendar year"
+msgstr "föregående kalenderår"
 
 msgid "quarter"
 msgstr "Kvartal"
